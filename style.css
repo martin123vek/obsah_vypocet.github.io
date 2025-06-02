@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+	background-color: #4B0082;
+	color: #fff;
+	font-family: "nunito", arial;
+}
+button {
+	font-family: "nunito", arial;
+	border-style: solid;
+	border-color: #fff;
+	border-radius: 10px;
+	color: #fff;
+	background-color: #4B0082;
+}
+button:hover {
+	background-color: #380161;
+	cursor: pointer;
+}
+button:active {
+	background-color: #2b014a;
+}
+input {
+	border-style: solid;
+	border-radius: 15px;
+	border-color: #fff;
+	background-color: #380161;
+	color: #fff;
+	font-family: "nunito", arial;
+}

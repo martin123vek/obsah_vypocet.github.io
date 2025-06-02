@@ -1,0 +1,31 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>Vypocitat obsah obdlznika</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		a:
+		<input type="number" id="a_cm"> cm
+		<br>
+		b:
+		<input type="number" id="b_cm"> cm
+		<br>
+		<br>
+		<button id="sbm_btn" onclick="vypocitat()" style="margin-left: 18px;">Submit</button>
+		<br>
+		<hr>
+		<p id="vysl_text"></p>
+		<script>
+		let a = 0
+		let b = 0
+		let vypocet = 0
+			function vypocitat() {
+				a = parseFloat(document.getElementById("a_cm").value)
+				b = parseFloat(document.getElementById("b_cm").value)
+				vypocet = a * b
+				document.getElementById("vysl_text").textContent = `obsah tvojho obdlznika je: ${vypocet} cm2`
+			}
+		</script>
+	</body>
+</html>

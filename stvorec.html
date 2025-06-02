@@ -1,0 +1,24 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>Vypocitat obsah stvorca</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<p>a:</p>
+			<input id="a_cm" type="number">
+			<button onclick="vypocitat()">Vypocitat</button>
+			<p id="text"></p>
+		</div>
+		<script>
+			let a = 0
+			let vypocet = 0
+			function vypocitat() {
+				a = parseFloat(document.getElementById("a_cm").value)
+				vypocet = a ** 2
+			document.getElementById("text").textContent = `Obsah tvojho stvorca je: ${vypocet} cm2`
+			}
+		</script>
+	</body>
+</html>
